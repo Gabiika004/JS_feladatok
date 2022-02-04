@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat 4 Garai Gábor</title>
+</head>
+<body>
+    <h1 tyle="margin-bottom: 30px;">
+        Hozz létre egy oldalt egy bekezdéssel és egy beviteli mezővel. <br>
+        Ha a beviteli mezőbe beképelünk valamit akkor a bekezdésben is jelenjen meg az a szöveg.<br>
+        (A beviteli mezőben lévő értéket annak 'value' tulajdonságával tudja lekérdezni.)
+    </h1>
+
+    <p style="font-weight: bold; font-size: 25px;">Itt jelennek meg a begépelt szövegek: <br></p>
+
+    <div id="text"></div>
+
+    <input  onchange="document.getElementById('text').insertAdjacentHTML
+    ('afterend', '<p style=' + '\'font-weight: bold; font-size: 20px; margin-left: 20px;\'' + '>' + this.value + '</p>');"
+    style="padding: 15px; width: 650px; margin: 15px; 
+    font-weight: bold; font-size: 50px;" type="text">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

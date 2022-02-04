@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feladat 3 Garai Gábor</title>
+</head>
+<body>
+    <h1 style="margin-bottom: 30px;">Hozz létre egy oldalt egy bekezdéssel és alatta egy képpel.</h1>
+    <ul style="margin-left: 30px; margin-bottom: 30px; font-size: 23px;">
+        <li>Ha a kép betöltődött akkor a bekezdésben jelenjen meg a "Betöltődött" felirat. </li>
+        <li>A képre kattintva a bekezdés felirata "Rákattintott" legyen.</li>
+    </ul>
+    <div style="width: 700px;">
+        <p id="text" style="font-size: 25px; font-weight: bold;"></p>
+    </div>
+
+    <img    onclick="document.getElementById('text').innerHTML='Rákattintott'" src="Logoo.jpg" alt="Logo"
+            onload="document.getElementById('text').innerHTML='Betöltődött'"
+            style="width: 500px; border-radius: 20%;">
+ 
+</body>
+</html> 
